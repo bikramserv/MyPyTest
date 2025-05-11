@@ -22,6 +22,8 @@ def test_get_resp():
 
      for verification_id in json_data ["data"]["id"]:
          print (f"The id of completed verifications are : {verification_id}")
+ elif json_data.get ("event") == "verification.failed":
+     print ("verification failed")
 
      #print(json_data)
  else:
